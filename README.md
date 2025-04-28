@@ -51,7 +51,7 @@ After cleaning, we were left with 60,090 valid records (out of 68,211) to analyz
 - **Worst Day:** Saturday and Sunday, both below $130K
 
 ### 3. Rush Hour vs. Non-Rush Hour:
-- Trips during rush hours (weekdays from 7 AM - 9 AM) tend to be less profitable, but are still valuable for maintaining consistent ride volumes.
+- Peak revenue occurs between 3–6 PM, with a significant drop post-6 PM.
 
 ### 4. Airport Fare Types:
 - **Highest Earning Fare:** Trips to JFK and Newark airports provide the highest revenue, especially for long-distance fares.
@@ -62,24 +62,24 @@ After cleaning, we were left with 60,090 valid records (out of 68,211) to analyz
 ## Actionable Recommendations
 
 ### 1. Zone-Based Fleet Optimisation:
-- **Focus on East Harlem (Zones 74 & 75)** for **~46.3%** of top 10 pickup revenue.
-- **Actions:** Deploy **20% of fleet** during **6–10 AM** and **1–6 PM**, partner with 24/7 services.
+- **Focus on top 10 locations especially East Harlem (Zones 74 & 75)**.
+- **Actions:** Deploy **70% of fleet** during **6–10 AM** and **1–6 PM**, partner with 24/7 services.
 
 ### 2. Driver Shift Scheduling:
-- **Weekdays** contribute **77.2%** of revenue, with **Tuesday** generating **~16.8%**.
-- **Actions:** Allocate **70% of shifts** to **Mon–Fri**, prioritize **rush hours**, offer **$10 bonuses**.
+- **Weekdays** contribute **77%** of revenue, with **Tuesday** generating **~16%**.
+- **Actions:** Allocate **80% of shifts** to **Mon–Fri**, prioritise **rush hours**, offer **$10 bonuses** for drivers with certain achievements.
 
 ### 3. Time-of-Day Efficiency:
 - **12–5 AM** generates <10% of revenue.
-- **Actions:** Assign **10% of fleet**, focus on nightlife areas, use for **maintenance**.
+- **Actions:** Assign **12% of fleet**, focus on nightlife areas, or use the time window for **maintenance**.
 
 ### 4. Standard Fare vs. Premium Trips:
 - **Standard trips** average **$16**, **premium trips** offer higher fares (e.g., **JFK** at **$70**).
-- **Actions:** Target **high-volume zones**, incentivize **premium trips** with **$10 bonuses**.
+- **Actions:** Target **high-volume zones**, incentivise **premium trips** with **$10 bonuses** for drivers with certain achievements.
 
 ### 5. Short-Trip Maximisation:
 - **Trips <10 miles** make up **75%+** of revenue.
-- **Actions:** Offer **$25 bonus** for **15 short trips**, focus on **downtown** and **transit hubs**.
+- **Actions:** Offer **$25 bonus** for drivers who can complete **15 short trips** in one shift, focus on **downtown** and **transit hubs**.
 
 ## How to Use This Repository:
 Clone this repository to run the analysis on your own device. Make sure to have the following dependencies installed:
