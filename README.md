@@ -10,11 +10,11 @@ This project analyses NYC taxi trip data to uncover insights that optimise fleet
 Running a taxi company in New York City is becoming increasingly difficult with rideshare apps like Uber and Lyft handling over 75% of the market. This project explores NYC taxi trip data to uncover revenue-boosting insights, helping taxi operators make more informed decisions and improve their bottom line.
 
 The project covers:
-- Top 10 Pickup & Drop-off Spots – Revenue-generating locations
-- High-Earning Days – Best days of the week for business
-- Rush Hour vs. Non-Rush Hour – Worth driving in peak hours?
-- Rate Code Analysis – Which fare types are most profitable?
-- Trip Distance vs. Revenue – Do longer trips always mean more money?
+- Top 10 Pickup & Drop-off Spots: Revenue-generating locations
+- High-Earning Days: Best days of the week for business
+- Rush Hour vs Non-Rush Hour: Worth driving in peak hours?
+- Rate Code Analysis: Which fare types are most profitable?
+- Trip Distance vs Revenue: Do longer trips always mean more money?
 
 ## Data:
 The analysis uses real-world data from the NYC Taxi & Limousine Commission (TLC). This dataset contains key features of thousands of taxi rides in NYC, such as trip times, locations, fares, payment methods, and more. You can access the dataset [here](https://drive.google.com/drive/folders/1NYHIL-RgVPW-HONz4pdzlcbIChF-c37N).
@@ -38,7 +38,7 @@ Before diving into the analysis, we first explored the dataset and handled missi
 - Imputing missing values logically based on column patterns
 - Identifying and removing outliers, such as unusually high fares for short trips or zero-distance trips with charges.
 
-After cleaning, we were left with 60,090 valid records (out of 68,211) to analyze.
+After cleaning, we were left with 60,090 valid records (out of 68,211) to analyse.
 
 ## Data Analysis Results:
 
@@ -50,13 +50,13 @@ After cleaning, we were left with 60,090 valid records (out of 68,211) to analyz
 - **Best Day:** Tuesday with $150K in revenue
 - **Worst Day:** Saturday and Sunday, both below $130K
 
-### 3. Rush Hour vs. Non-Rush Hour:
+### 3. Rush Hour vs Non-Rush Hour:
 - Peak revenue occurs between 3–6 PM, with a significant drop post-6 PM.
 
 ### 4. Airport Fare Types:
 - **Highest Earning Fare:** Trips to JFK and Newark airports provide the highest revenue, especially for long-distance fares.
 
-### 5. Trip Distance vs. Revenue:
+### 5. Trip Distance vs Revenue:
 - Medium-distance trips (5-30 miles) generate the highest revenue per trip. Long-distance trips (over 30 miles) yield mixed returns and may not always be as profitable.
 
 ## Actionable Recommendations
