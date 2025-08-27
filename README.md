@@ -114,3 +114,8 @@ After cleaning, we were left with 60,090 valid records (out of 68,211) to analys
 - Develop partnerships for **airport transfers, corporate accounts, and negotiated fares**  
 - Explore specialised markets to **reduce reliance on standard street-hail trips**  
 - Refine **pricing models** based on high-revenue, short-distance trips
+
+---
+
+Presentation: https://www.canva.com/design/DAGlOEP6s4w/yhWUBoErG5G0ksTa_l3S0Q/edit?utm_content=DAGlOEP6s4w&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+Tableau Dashboard: https://public.tableau.com/app/profile/risma.w.p./viz/NYCTLCDashboard_17562651808670/Dashboard#1
