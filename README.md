@@ -15,6 +15,9 @@ The project covers:
 - Rush Hour vs Non-Rush Hour: Worth driving in peak hours?
 - Rate Code Analysis: Which fare types are most profitable?
 - Trip Distance vs Revenue: Do longer trips always mean more money?
+- Passenger Count Trends: How does the number of passengers affect total revenue? Are solo rides more profitable per mile than group rides?
+- Trip Type Differences: Do different trip types show significant differences in revenue patterns?
+- Traffic Surcharge Analysis: How much does the congestion surcharge contribute to overall revenue during peak hours?
 
 ## Data:
 The analysis uses real-world data from the NYC Taxi & Limousine Commission (TLC). This dataset contains key features of thousands of taxi rides in NYC, such as trip times, locations, fares, payment methods, and more. You can access the dataset [here](https://drive.google.com/drive/folders/1NYHIL-RgVPW-HONz4pdzlcbIChF-c37N).
@@ -40,51 +43,74 @@ Before diving into the analysis, we first explored the dataset and handled missi
 
 After cleaning, we were left with 60,090 valid records (out of 68,211) to analyse.
 
-## Data Analysis Results:
+## Summary of Key Findings
 
-### 1. Top 10 Pickup & Drop-off Spots:
-- **Top Pickup Spot:** Zone 74 with $176K in revenue
-- **Top Drop-off Spot:** Zone 75 with $33K in revenue
+### 1. Revenue by Taxi Zones
+- **Highest pickup revenue:** Zone 74 ($219,658 which is 19.1% of total revenue) and Zone 75 ($155,197 which is 13.5% of total revenue)  
+- **Highest drop-off revenue:** Zone 236 ($45,247 which is 3.9% of total revenue)  
+- Zones 74 and 166 appear in both pickup and drop-off lists, indicating high-traffic corridors.
 
-### 2. High-Earning Days:
-- **Best Day:** Tuesday with $150K in revenue
-- **Worst Day:** Saturday and Sunday, both below $130K
+### 2. Revenue by Day of the Week
+- **Tuesday:** Highest revenue ($193,348 which is 16.8% of total revenue)  
+- Weekdays (Monday–Friday) consistently outperform weekends  
+- Saturday ($141,833 which is 16.8% of total revenue) and Sunday ($136,480 which is 11.9% of total revenue) show lower revenue  
+- Thursday shows a minor mid-week revenue boost
 
-### 3. Rush Hour vs Non-Rush Hour:
-- Peak revenue occurs between 3–6 PM, with a significant drop post-6 PM.
+### 3. Hourly Revenue Trends
+- **Peak hours:** 4 PM–6 PM ($86,647–$95,303 which is 7.5%–8.3% of total revenue)  
+- Morning peaks: 7 AM–9 AM ($40,447–$56,080 which is 3.5%–4.9% of total revenue)  
+- Lowest revenue: 12 AM–6 AM ($7,712–$18,176 which is 0.7%–1.6% of total revenue)
 
-### 4. Airport Fare Types:
-- **Highest Earning Fare:** Trips to JFK and Newark airports provide the highest revenue, especially for long-distance fares.
+### 4. Rate Code Revenue
+- **Standard Rate (ID=1):** $1.11M which is 96.6% of total revenue (dominant revenue source)  
+- **Negotiated Fares (ID=5):** $21.7K which is 1.9% of total revenue, high-value but low-volume  
+- Airport trips (JFK, Newark) and suburban trips contribute minor revenue
 
-### 5. Trip Distance vs Revenue:
-- Medium-distance trips (5-30 miles) generate the highest revenue per trip. Long-distance trips (over 30 miles) yield mixed returns and may not always be as profitable.
+### 5. Trip Distance vs. Revenue
+- Short trips (< 10 miles) generate **most total revenue** due to high volume  
+- Long trips (> 20 miles) are less frequent and more variable in revenue
+
+### 6. Passenger Count vs. Revenue
+- Single-passenger trips: $969K which is 84.3% of total revenue (dominant)  
+- Multi-passenger trips contribute minimally
+
+### 7. Trip Type vs. Revenue
+- **Street-hail trips:** High volume, $1.13M which is 98.3% of total revenue  
+- **Dispatch trips:** Higher average revenue ($31.66) but low total revenue ($19.6K which is 1.7% of total revenue)
+
+### 8. Congestion Surcharge by Hour
+- Peaks in late afternoon (3 PM–6 PM), max $3,797 at 6 PM  
+- Lowest overnight (12 AM–5 AM)
 
 ## Actionable Recommendations
 
-### 1. Zone-Based Fleet Optimisation:
-- **Focus on top 10 locations especially East Harlem (Zones 74 & 75)**.
-- **Actions:** Deploy **70% of fleet** during **6–10 AM** and **1–6 PM**, partner with 24/7 services.
+### 1. Driver Allocation & Scheduling
+- Deploy more drivers in **high-revenue pickup zones** (Zones 74, 75, 166) during peak hours  
+- Increase fleet presence on **Tuesdays and Thursdays**, and during **morning (7–9 AM) and afternoon/evening (4–6 PM) peaks**  
+- Reduce fleet presence during **low-demand hours (12–6 AM, late night)**
 
-### 2. Driver Shift Scheduling:
-- **Weekdays** contribute **77%** of revenue, with **Tuesday** generating **~16%**.
-- **Actions:** Allocate **80% of shifts** to **Mon–Fri**, prioritise **rush hours**, offer **$10 bonuses** for drivers with certain achievements.
+### 2. Fleet Composition & Trip Strategy
+- Prioritise **sedans/standard cars** for single-passenger trips  
+- Reserve larger vehicles for **airport transfers, events, or group rides**  
+- Optimise dispatch for **short-distance, high-volume trips (< 10 miles)**
 
-### 3. Time-of-Day Efficiency:
-- **12–5 AM** generates <10% of revenue.
-- **Actions:** Assign **12% of fleet**, focus on nightlife areas, or use the time window for **maintenance**.
+### 3. Revenue & Pricing Optimisation
+- Leverage **dispatch trips and negotiated fares** for high-value revenue  
+- Introduce **dynamic pricing** or surge pricing during afternoon/evening peaks (3–6 PM)  
+- Promote **weekend rides** to offset natural dips in demand  
+- Monitor long trips (> 20 miles) for inefficiencies (e.g., deadhead miles)
 
-### 4. Standard Fare vs. Premium Trips:
-- **Standard trips** average **$16**, **premium trips** offer higher fares (e.g., **JFK** at **$70**).
-- **Actions:** Target **high-volume zones**, incentivise **premium trips** with **$10 bonuses** for drivers with certain achievements.
+### 4. Operational Efficiency & Route Planning
+- Position drivers near **overlapping high-revenue pickup and drop-off zones**  
+- Adjust **pricing or incentives** during peak congestion hours  
+- Coordinate with **airports, corporate clients, and event venues** to capture structured demand
 
-### 5. Short-Trip Maximisation:
-- **Trips <10 miles** make up **75%+** of revenue.
-- **Actions:** Offer **$25 bonus** for drivers who can complete **15 short trips** in one shift, focus on **downtown** and **transit hubs**.
+### 5. Customer Experience & Marketing
+- Promote **off-peak travel** as a cheaper alternative  
+- Introduce **loyalty programs or promotions** for group rides or long trips  
+- Educate passengers on **congestion impacts on pricing**
 
-## How to Use This Repository:
-Clone this repository to run the analysis on your own device. Make sure to have the following dependencies installed:
-- Python 3.x
-- Pandas
-- Matplotlib
-- Seaborn
-- Plotly
+### 6. Strategic Partnerships & Expansion
+- Develop partnerships for **airport transfers, corporate accounts, and negotiated fares**  
+- Explore specialised markets to **reduce reliance on standard street-hail trips**  
+- Refine **pricing models** based on high-revenue, short-distance trips
