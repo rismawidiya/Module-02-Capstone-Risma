@@ -117,5 +117,5 @@ After cleaning, we were left with 60,090 valid records (out of 68,211) to analys
 
 ---
 
-- Presentation: [NYC TLC Presentation](https://drive.google.com/file/d/1ncdYbGW8sNAal5MDrCNDisaGQ0Q7oOmS/view?usp=sharing)
+- Presentation: [NYC TLC Presentation](https://drive.google.com/file/d/1TwC9HIC9ql4HwmX3F3I2Isw6SIvd3lvo/view?usp=sharing)
 - Tableau Dashboard: [NYC TLC Dashboard](https://public.tableau.com/app/profile/risma.w.p./viz/NYCTLCDashboard_17562651808670/Dashboard#1)
