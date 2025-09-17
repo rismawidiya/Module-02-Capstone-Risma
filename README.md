@@ -79,7 +79,7 @@ After cleaning, I was left with 60,090 valid records (out of 68,211) to analyse.
 
 ### 1. Revenue by Taxi Zones
 ![Top 10 Pickup Zones](https://drive.google.com/uc?export=view&id=18NwDO7sqXNMIHZfWNaJQnHyzU3W5bYsQ)
-![Top 10 Drop-off Zones](https://drive.google.com/uc?export=view&id=1aeuirAdMUsSwqVrRpNjcZuLycgn)
+![Top 10 Drop-off Zones](https://drive.google.com/uc?export=view&id=1aeuirAdMUsSwqVrRpNjcZuLycgn_lwkV)
 - **Highest pickup revenue:** Zone 74 ($219,658 which is 19.1% of total revenue) and Zone 75 ($155,197 which is 13.5% of total revenue)  
 - **Highest drop-off revenue:** Zone 236 ($45,247 which is 3.9% of total revenue)  
 - Zones 74 and 166 appear in both pickup and drop-off lists, indicating high-traffic corridors.
