@@ -36,7 +36,7 @@ These findings led to **actionable recommendations** for driver allocation, sche
 
 ---
 
-## Data:
+## Data
 The analysis uses real-world data from the NYC Taxi & Limousine Commission (TLC). This dataset contains key features of thousands of taxi rides in NYC, such as trip times, locations, fares, payment methods, and more. You can access the dataset [here](https://drive.google.com/drive/folders/1NYHIL-RgVPW-HONz4pdzlcbIChF-c37N).
 
 Key Features:
@@ -65,7 +65,7 @@ Key Features:
 
 ---
 
-## Data Cleaning:
+## Data Cleaning
 Before diving into the analysis, I first explored the dataset and handled missing values and outliers. This included:
 - Removing irrelevant columns (e.g., VendorID, tip_amount)
 - Imputing missing values logically based on column patterns (e.g., Missing `trip_type` imputed using the most common value per `RateCodeID` to keep fare–trip consistency)  
