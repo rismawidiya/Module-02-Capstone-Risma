@@ -66,7 +66,7 @@ Key Features:
 ---
 
 ## Data Cleaning
-Before diving into the analysis, I first explored the dataset and handled missing values and outliers. This included:
+Before diving into the analysis, I first explored the dataset and handled missing values and outliers. This process includes:
 - Removing irrelevant columns (e.g., VendorID, tip_amount)
 - Imputing missing values logically based on column patterns (e.g., Missing `trip_type` imputed using the most common value per `RateCodeID` to keep fare–trip consistency)  
 - Identifying and removing outliers (e.g. Unusually high fares for short trips or zero-distance trips with charges)
