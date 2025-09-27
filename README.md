@@ -374,5 +374,5 @@ This data-driven driver allocation strategy maximises revenue, enhances driver e
 
 ---
 
-- Presentation: [NYC TLC Presentation](https://drive.google.com/file/d/1TwC9HIC9ql4HwmX3F3I2Isw6SIvd3lvo/view?usp=sharing)
+- Presentation: [NYC TLC Presentation](https://drive.google.com/file/d/1dkPA2uDWO3S5fQpFm9UtwfnP4AgkNUAC/view?usp=sharing)
 - Tableau Dashboard: [NYC TLC Dashboard](https://public.tableau.com/app/profile/risma.w.p./viz/NYCTLCDashboard_17562651808670/Dashboard#1)
