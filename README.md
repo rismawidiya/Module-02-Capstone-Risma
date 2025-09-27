@@ -361,12 +361,16 @@ After cleaning, I was left with 60,090 valid records (out of 68,211) to analyse.
 ---
 
 ## Impact
-This project demonstrates how **data-driven decision-making** can help NYC taxi companies:  
-- Increase revenue by targeting the **right zones and hours**  
-- Improve operational efficiency through **smarter driver allocation**  
-- Diversify revenue streams with **negotiated fares and partnerships**  
 
-Ultimately, the analysis shows that with the right data strategy, traditional taxi operators can reclaim market share and thrive, even in a rideshare-dominated landscape.  
+The optimised driver allocation plan delivers clear, quantifiable results:  
+
+- **Revenue Growth**: Average revenue per driver per shift rises from **$1,239.35 → $1,703.70** (**+37.47% uplift**).  
+- **Driver Earnings**: Each driver gains approximately **+$464 per shift**, directly boosting income and satisfaction.  
+- **Annual Company Impact**: With **1,000 drivers × 250 shifts/year**, the plan generates **+$116M additional annual revenue potential**.  
+- **Operational Efficiency**: Focused coverage in demand-heavy zones (East Harlem, Midtown business districts, weekend hotspots) while reducing oversupply during off-peak hours.  
+- **Diversified Revenue**: The **Dispatch_Negotiated_Focus** strategy delivers up to **+10% uplift** in select partnerships, adding resilience beyond standard fares.  
+
+This data-driven driver allocation strategy maximises revenue, enhances driver engagement, and positions traditional taxi operators to stay competitive in a rideshare-dominated market.  
 
 ---
 
