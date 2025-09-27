@@ -253,38 +253,110 @@ After cleaning, I was left with 60,090 valid records (out of 68,211) to analyse.
 
 ---
 
+## Summary of Key Findings
+
+### 1. Revenue by Taxi Zones
+- **Highest pickup revenue:** Zone 74 ($219,658 which is 19.1% of total revenue) and Zone 75 ($155,197 which is 13.5% of total revenue)  
+- **Highest drop-off revenue:** Zone 236 ($45,247 which is 3.9% of total revenue)  
+- Zones 74 and 166 appear in both pickup and drop-off lists, indicating high-traffic corridors.
+
+### 2. Revenue by Day of the Week
+- **Tuesday:** Highest revenue ($193,348 which is 16.8% of total revenue)  
+- Weekdays (Monday–Friday) consistently outperform weekends  
+- Saturday ($141,833 which is 16.8% of total revenue) and Sunday ($136,480 which is 11.9% of total revenue) show lower revenue  
+- Thursday shows a minor mid-week revenue boost
+
+### 3. Hourly Revenue Trends
+- **Peak hours:** 4 PM–6 PM ($86,647–$95,303 which is 7.5%–8.3% of total revenue)  
+- Morning peaks: 7 AM–9 AM ($40,447–$56,080 which is 3.5%–4.9% of total revenue)  
+- Lowest revenue: 12 AM–6 AM ($7,712–$18,176 which is 0.7%–1.6% of total revenue)
+
+### 4. Rate Code Revenue
+- **Standard Rate (ID=1):** $1.11M which is 96.6% of total revenue (dominant revenue source)  
+- **Negotiated Fares (ID=5):** $21.7K which is 1.9% of total revenue, high-value but low-volume  
+- Airport trips (JFK, Newark) and suburban trips contribute minor revenue
+
+### 5. Trip Distance vs. Revenue
+- Short trips (< 10 miles) generate **most total revenue** due to high volume  
+- Long trips (> 20 miles) are less frequent and more variable in revenue
+
+### 6. Passenger Count vs. Revenue
+- Single-passenger trips: $969K which is 84.3% of total revenue (dominant)  
+- Multi-passenger trips contribute minimally
+
+### 7. Trip Type vs. Revenue
+- **Street-hail trips:** High volume, $1.13M which is 98.3% of total revenue  
+- **Dispatch trips:** Higher average revenue ($31.66) but low total revenue ($19.6K which is 1.7% of total revenue)
+
+### 8. Congestion Surcharge by Hour
+- Peaks in late afternoon (3 PM–6 PM), max $3,797 at 6 PM  
+- Lowest overnight (12 AM–5 AM)
+
+---
+
 ## Actionable Recommendations
 
 ### 1. Driver Allocation & Scheduling
-- Deploy more drivers in **high-revenue pickup zones** (Zones 74, 75, 166) during peak hours  
-- Increase fleet presence on **Tuesdays and Thursdays**, and during **morning (7–9 AM) and afternoon/evening (4–6 PM) peaks**  
-- Reduce fleet presence during **low-demand hours (12–6 AM, late night)**
+- Concentrate **20% of fleet** in **East Harlem & Manhattanville** (Zones 74, 75) during **weekday evenings (4–6 PM)** → +8% uplift.  
+- Dedicate **10% of fleet** to **morning commutes** in **Zones 74 & 166** on **Mon/Wed/Fri** → +5% uplift.  
+- Deploy **8% of fleet** to **business districts** (Zones 41, 43, 95) midday weekdays → +6% uplift.  
+- Allocate **6% of fleet** to **weekend evenings** in nightlife zones (41, 43, 82).  
+- Cut **overnight shifts** to ~2% of fleet (12–6 AM), as these hours generate <2% revenue.  
 
 ### 2. Fleet Composition & Trip Strategy
-- Prioritise **sedans/standard cars** for single-passenger trips  
-- Reserve larger vehicles for **airport transfers, events, or group rides**  
-- Optimise dispatch for **short-distance, high-volume trips (< 10 miles)**
+- Prioritise **sedans** for short, single-passenger rides (<10 miles).  
+- Reserve larger vehicles for **dispatch/airport trips** (Zones 236, 238, 244).  
+- Focus on **short-trip, high-turnover strategy** for higher fleet utilisation.  
 
 ### 3. Revenue & Pricing Optimisation
-- Leverage **dispatch trips and negotiated fares** for high-value revenue  
-- Introduce **dynamic pricing** or surge pricing during afternoon/evening peaks (3–6 PM)  
-- Promote **weekend rides** to offset natural dips in demand  
-- Monitor long trips (> 20 miles) for inefficiencies (e.g., deadhead miles)
+- Apply **dynamic pricing** during weekday evening peaks.  
+- Offer **weekend ride incentives** to offset natural demand dips.  
+- Scale up **dispatch trips & negotiated fares** to increase share of high-value rides.  
 
 ### 4. Operational Efficiency & Route Planning
-- Position drivers near **overlapping high-revenue pickup and drop-off zones**  
-- Adjust **pricing or incentives** during peak congestion hours  
-- Coordinate with **airports, corporate clients, and event venues** to capture structured demand
+- Use **geo-fencing** to hold drivers within top-performing zones during peaks.  
+- Dynamically reallocate drivers between **business (day)** and **residential zones (evening)**.  
+- Reduce idle time by trimming low-revenue overnight hours.  
 
 ### 5. Customer Experience & Marketing
-- Promote **off-peak travel** as a cheaper alternative  
-- Introduce **loyalty programs or promotions** for group rides or long trips  
-- Educate passengers on **congestion impacts on pricing**
+- Market **off-peak discounts** to smooth demand.  
+- Create **loyalty programs** for frequent commuters.  
+- Promote **pre-booked dispatch trips** for premium passengers.  
 
 ### 6. Strategic Partnerships & Expansion
-- Develop partnerships for **airport transfers, corporate accounts, and negotiated fares**  
-- Explore specialised markets to **reduce reliance on standard street-hail trips**  
-- Refine **pricing models** based on high-revenue, short-distance trips
+- Build partnerships with **business districts, event venues, and airports**.  
+- Expand **corporate accounts** for weekday commuters.  
+- Explore **nightlife partnerships** to maximise weekend evening demand.
+
+---
+
+## Driver Allocation Plan (Optimised)
+
+| Plan Name                                | Days                  | Time Slot      | Zones            | % Fleet | Strategy Multiplier | Expected Uplift |
+|------------------------------------------|-----------------------|----------------|------------------|---------|---------------------|-----------------|
+| Evening_EastHarlem_Manhattanville        | Tue, Thu              | Evening (4–6)  | 74, 75           | 12%     | 1.08                | +8%             |
+| Morning_Commute_Highzones                | Mon, Wed, Fri         | Morning (7–9)  | 74, 166          | 10%     | 1.05                | +5%             |
+| Midday_BusinessDistricts_Weekdays        | Mon–Fri               | Daytime        | 95, 41, 43       | 8%      | 1.06                | +6%             |
+| Weekend_Boost_Evenings                   | Sat, Sun              | Evening        | 41, 43, 82       | 6%      | 1.04                | +4%             |
+| ShortTrip_Priority_AllDays               | All Days              | Day + Evening  | 74, 166, 95, 41, 43, 82 | 10% | 1.07                | +7%             |
+| Dispatch_Negotiated_Focus                | All Days              | Day + Evening  | 244, 236, 238    | 4%      | 1.10                | +10%            |
+| CongestionPeak_Target                    | Mon–Fri               | Evening (4–6)  | 74, 75, 166      | 5%      | 1.05                | +5%             |
+| OffPeak_Reduction                        | All Days              | Night (12–6)   | All Zones        | 2%      | 1.00                | Neutral         |
+
+**Note:** Remaining ~43% of fleet follows baseline allocation to maintain citywide coverage.  
+**Clarification:** CongestionPeak_Target is an **add-on incentive strategy**, not double-counted with Evening_EastHarlem.  
+
+---
+
+## Projected Results
+
+- **Baseline:** Avg. revenue per driver per shift = **$1,239.35**  
+- **With allocation plan:** +37.47% uplift → **$1,703.70**
+- **Per-driver gain:** +$464 per shift  
+
+**Annualised Impact (1,000 drivers × 250 shifts/year):**  
+= $464 × 250 × 1,000  
+= **+$116M additional annual revenue potential**
 
 ---
 
