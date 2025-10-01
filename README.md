@@ -1,7 +1,7 @@
 # Drive Smart, Maximise Profits: Data-Driven Insights to Boost NYC Taxi Company Revenue (2023)
 
 ## Project Overview
-The New York City taxi industry faces stiff competition from rideshare platforms like Uber and Lyft, which now command over 75% of the market. To remain competitive, taxi companies must optimise fleet performance, pricing, and scheduling.  
+The New York City taxi industry faces stiff competition from rideshare platforms like Uber and Lyft, which now command over 86.1% of the market. To remain competitive, taxi companies must optimise fleet performance, pricing, and scheduling.  
 
 This project analyses **NYC Taxi & Limousine Commission (TLC) trip data** to uncover revenue-boosting opportunities. By combining exploratory data analysis with actionable business insights, the project demonstrates how a data-driven approach can transform fleet management and profitability.  
 
